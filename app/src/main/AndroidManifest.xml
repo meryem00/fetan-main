@@ -8,16 +8,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".framework.WelcomeActivity">
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".framework.HomeActivity" />
+        <activity android:name=".HomeActivity" />
         <activity
-            android:name=".framework.AddRunActivity"
+            android:name=".AddRunActivity"
             android:label="@string/add_run_title" />
     </application>
 </manifest>

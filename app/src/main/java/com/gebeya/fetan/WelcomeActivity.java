@@ -1,4 +1,4 @@
-package com.gebeya.fetan.framework;
+package com.gebeya.fetan;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,7 +7,6 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.gebeya.fetan.R;
 import com.gebeya.fetan.framework.base.BaseActivity;
 import com.gebeya.fetan.framework.util.Const;
 

@@ -1,12 +1,10 @@
-package com.gebeya.fetan.framework;
+package com.gebeya.fetan;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.gebeya.fetan.R;
 import com.gebeya.fetan.framework.base.BaseActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

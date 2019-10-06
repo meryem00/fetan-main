@@ -1,4 +1,4 @@
-package com.gebeya.fetan.framework;
+package com.gebeya.fetan;
 
 import android.os.Bundle;
 import android.widget.EditText;
