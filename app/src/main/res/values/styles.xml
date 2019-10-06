@@ -6,7 +6,6 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/blue</item>
         <item name="android:windowBackground">@color/white</item>
-        <item name="android:windowAnimationStyle">@style/activity_transitions</item>
     </style>
 
     <!-- activity transition style -->
@@ -53,5 +52,4 @@
     <style name="input">
         <item name="android:textSize">24sp</item>
     </style>
-
 </resources>

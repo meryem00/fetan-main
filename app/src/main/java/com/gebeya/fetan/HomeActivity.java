@@ -1,8 +1,5 @@
 package com.gebeya.fetan;
 
-import android.animation.AnimatorInflater;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -37,17 +34,6 @@ public class HomeActivity extends BaseActivity {
             final Intent intent = new Intent(getApplicationContext(), AddRunActivity.class);
             startActivity(intent);
         });
-
-        AnimatorSet fabAnimation = (AnimatorSet) AnimatorInflater.loadAnimator(
-        this, R.animator.fab_animation
-        );
-        fabAnimation.setTarget(fab);
-        fabAnimation.start();
-
-        ObjectAnimator animator = ObjectAnimator.ofFloat(noRunsLabel, "alpha", 0f, 1f);
-        animator.setDuration(1000);
-        animator.setStartDelay(400);
-        animator.start();
     }
 
     @Override
