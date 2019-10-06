@@ -6,7 +6,6 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.room.Room;
 
-import com.gebeya.fetan.R;
 import com.gebeya.fetan.data.AppDatabase;
 import com.gebeya.fetan.data.model.Run;
 import com.gebeya.fetan.framework.base.BaseActivity;
@@ -27,7 +26,6 @@ public class AddRunActivity extends BaseActivity {
     EditText timeEditText;
 
     private AppDatabase db;
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

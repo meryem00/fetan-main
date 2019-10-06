@@ -8,6 +8,13 @@
         <item name="android:windowBackground">@color/white</item>
     </style>
 
+    <!-- full screen activity -->
+    <style name="AppTheme.FullScreen">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <style name="button">
         <item name="android:minWidth">150dp</item>
     </style>

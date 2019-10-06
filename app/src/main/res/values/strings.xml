@@ -15,4 +15,8 @@
     <string name="add_run_time_hint">Time (minutes)</string>
     <string name="add_run_save_run">Save Run</string>
 
+    <!-- ADD RUN ACTIVITY -->
+    <string name="about_title">@string/app_name</string>
+    <string name="about_version">v1.0.0</string>
+    <string name="about_copyright">© Gebeya - 2019</string>
 </resources>
