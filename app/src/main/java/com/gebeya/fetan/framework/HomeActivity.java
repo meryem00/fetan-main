@@ -20,12 +20,9 @@ public class HomeActivity extends BaseActivity {
         setContentView(R.layout.activity_home);
 
         fab = findViewById(R.id.floatingActionButton);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final Intent intent = new Intent(getApplicationContext(), AddRunActivity.class);
-                startActivity(intent);
-            }
+        fab.setOnClickListener(view -> {
+            final Intent intent = new Intent(getApplicationContext(), AddRunActivity.class);
+            startActivity(intent);
         });
     }
 }

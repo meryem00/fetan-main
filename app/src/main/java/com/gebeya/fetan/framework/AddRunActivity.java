@@ -28,6 +28,7 @@ public class AddRunActivity extends BaseActivity {
 
     private AppDatabase db;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
