@@ -1,5 +1,8 @@
 package com.gebeya.fetan;
 
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class HomeActivity extends BaseActivity {
 
@@ -34,6 +38,21 @@ public class HomeActivity extends BaseActivity {
             final Intent intent = new Intent(getApplicationContext(), AddRunActivity.class);
             startActivity(intent);
         });
+        AnimatorSet fabAnimation = (AnimatorSet)
+                AnimatorInflater.loadAnimator(
+                        this, R.animator.fab_animation
+                );
+        fabAnimation.setTarget(fab);
+        fabAnimation.start();
+
+        ObjectAnimator animator =
+                ObjectAnimator.ofFloat(
+                        noRunsLabel, "alpha", 0f, 1f
+                );
+        animator.setDuration(1000);
+        animator.setStartDelay(400);
+        animator.start();
+        startActivity(new Intent(this, AboutActivity.class));
     }
 
     @Override
@@ -54,5 +73,6 @@ public class HomeActivity extends BaseActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 }

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
+        android:visibility="gone"
         android:text="@string/home_no_runs_label" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -26,4 +27,12 @@
         app:fabSize="normal"
         app:srcCompat="@drawable/add_icon" />
 
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_centerInParent="true"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_speed="2"
+    app:lottie_rawRes="@raw/lottie_anim"/>
 </RelativeLayout>

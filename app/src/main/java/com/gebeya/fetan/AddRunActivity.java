@@ -1,5 +1,6 @@
 package com.gebeya.fetan;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.widget.EditText;
 
@@ -12,6 +13,7 @@ import com.gebeya.fetan.framework.base.BaseActivity;
 import com.gebeya.fetan.framework.util.Const;
 
 import java.util.Date;
+import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,4 +58,5 @@ public class AddRunActivity extends BaseActivity {
         toast("Run saved!");
         finish();
     }
+
 }
